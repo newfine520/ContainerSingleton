@@ -7,8 +7,8 @@ public class ExectorThread implements Runnable{
 
     public void run() {
 
-        Object instance = ContainerSingleton.getSingletonInstance("com.patter.singleton.ContainerSingleton");
-        System.out.println(ContainerSingleton.getSingletonInstance("com.patter.singleton.ContainerSingleton"));
+        Object instance = DoubleCheckContainerSingleton.getSingletonInstance("com.patter.singleton.DoubleCheckContainerSingleton");
+        System.out.println(DoubleCheckContainerSingleton.getSingletonInstance("com.patter.singleton.DoubleCheckContainerSingleton"));
         System.out.println(Thread.currentThread().getName() + ":" + instance);
 
     }
